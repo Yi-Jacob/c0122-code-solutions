@@ -7,15 +7,17 @@
 
 <body>
   <h1>Coding Form!</h1>
+
   <form action="" method="get">
-    <label for="text">Email</label>
+
     <div>
-      <input type="text">
+      <label for="Email">Email</label>
+      <input type="text" name="Email" id="Email">
     </div>
 
     <label for="select an option">Why is coding cool?</label>
     <div>
-      <select name="select an option">
+      <select name="select an option" id="select an option">
         <option value="Select an option">Select an option</option>
         <option value="Interesting">Because it's Interesting</option>
         <option value="Fun">Because it's fun</option>
@@ -25,31 +27,31 @@
 
     <label for="radio">Favorite Language</label>
     <div>
-      <label for="radio-HTML">HTML</label>
-      <input type="radio" name="HTML" />
+      <div>
+        <label for="HTML">HTML</label>
+        <input type="radio" name="HTML" id="HTML">
 
-      <label for="radio-CSS">CSS</label>
-      <input type="radio" name="CSS" />
+        <label for="CSS">CSS</label>
+        <input type="radio" name="CSS" id="CSS">
 
-      <label for="radio-js">Javascript</label>
-      <input type="radio" name="Java" />
-    </div>
+        <label for="Java">Javascript</label>
+        <input type="radio" name="Java" id="Java">
+      </div>
 
-    <label for="checkbox">Would you like to sign up for more information?</label>
-    <div>
-      <input type="checkbox" name="sign"/>
-      <label for="checkbox">Sign me Up!</label>
-    </div>
+      <label for="sign">Would you like to sign up for more information?</label>
+      <div>
+        <input type="checkbox" name="sign" id="sign">
+        <label for="checkbox">Sign me Up!</label>
+      </div>
 
-    <label for="textarea">Comments</label>
-    <div>
-      <textarea name="comments" cols="40" rows="10"></textarea>
-    </div>
+      <label for="textarea">Comments</label>
+      <div>
+        <textarea name="comments" cols="40" rows="10" id="textarea"></textarea>
+      </div>
 
-    <div>
-      <input type="submit">
-    </div>
-  </form>
-</body>
+      <div>
+        <input type="submit">
+      </div>
 
+  </body>
 </html>
