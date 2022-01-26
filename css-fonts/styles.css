@@ -1,9 +1,8 @@
-
 body {
   line-height: 250%;
 }
 
-.font-1 {
+h1, h2, .font-1 {
   font-family: 'Comforter', cursive;
 }
 
