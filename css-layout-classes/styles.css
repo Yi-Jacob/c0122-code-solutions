@@ -1,0 +1,31 @@
+h3 {
+  text-align: left;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  max-width: 800px;
+  flex-basis: auto;
+}
+
+.column1-3 {
+  flex-basis: calc(100% / 3);
+}
+
+.column1-4 {
+  flex-basis: calc(100% / 4);
+}
+
+.column2-3 {
+  flex-basis: calc(200% / 3);
+}
