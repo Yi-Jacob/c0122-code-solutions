@@ -4,11 +4,13 @@ body {
 
 img {
   margin: 4px;
-  height: 50%;
-  width: 50%;
   background-color: white;
   border-radius: 50%;
+}
+
+h2 {
   text-align: center;
+  justify-content: center;
 }
 
 .container {
@@ -20,18 +22,22 @@ img {
   display: flex;
 }
 
+.column-main {
+  flex-basis: 100%;
+  text-align: center;
+}
+
 .paddingtop {
   padding-top: 8px;
 }
 
 .column {
   flex-basis: calc(100% / 3);
+  align-content: center;
 }
 
 .textalign {
   text-align: center;
-  justify-content: center;
-  align-content: center;
 }
 
 .paddingtext {
