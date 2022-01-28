@@ -1,0 +1,20 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  width: 50%;
+}
+
+.textalignc {
+  text-align: center;
+}
+
+.columnh {
+  flex-basis: 100%;
+}
