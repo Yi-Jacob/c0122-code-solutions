@@ -1,3 +1,8 @@
+img {
+  width: 50%;
+  height: auto;
+}
+
 .container {
   max-width: 1000px;
   margin: auto;
@@ -17,4 +22,26 @@
 
 .columnh {
   flex-basis: 100%;
+}
+
+.padding {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.lspace {
+  line-height: 2rem;
+}
+
+.paddingimg {
+  padding-right: 3px;
+}
+
+.imgcolumn {
+  flex-basis: calc(200% / 6);
+}
+
+.textcolumn {
+  flex-basis: calc(100% / 6);
+  margin-right: 10%;
 }
