@@ -44,7 +44,7 @@ button {
   text-align: center;
 }
 
-.columnh {
+.full-column {
   flex-basis: 100%;
 }
 
@@ -61,12 +61,12 @@ button {
   padding-right: 3px;
 }
 
-.imgcolumn {
+.column1-6 {
   flex-basis: calc(100% / 6);
 }
 
-.textcolumn {
-  flex-basis: calc(200% / 6);
+.column1-3 {
+  flex-basis: calc(100% / 3);
   margin-right: 10%;
 }
 
