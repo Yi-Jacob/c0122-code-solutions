@@ -13,36 +13,75 @@ button {
 }
 
 .nav-img {
-  margin-right: 25%;
+  margin-right: 10rem;
+  margin-bottom: 8px;
 }
 
 .nav-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  margin: auto;
+}
+
+.nav-border {
+  border-bottom: 1px solid rgb(82 83 81);
+  margin-bottom: 2rem;
 }
 
 .nav-item {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 4rem;
+  padding-right: 1rem;
+}
+
+.nav-button {
+  margin-left: 2rem;
+}
+
+.nav-padding {
+  padding-top: 1rem;
+}
+
+.nav-margin {
+  margin-bottom: 2rem;
 }
 
 .hero {
+  max-width: 1000px;
   max-height: 700px;
+  margin: auto;
+  justify-content: space-evenly;
 }
 
 .hero-img {
   position: relative;
+  max-width: 1000px;
+  height: auto;
+  margin-left: 4rem;
+}
+
+.hero-overlay {
+  position: relative;
   width: 900px;
   margin: auto;
+  background: linear-gradient(transparent, rgb(0 0 0 / 150%));
 }
 
 .hero-text {
   position: absolute;
   color: white;
-  width: 40%;
-  padding-left: 2rem;
+  width: 30%;
+  padding-left: 5rem;
   padding-top: 2rem;
+  margin: auto;
+}
+
+.hero-button {
+  position: absolute;
+  left: 20rem;
+  bottom: 2rem;
+  color: white;
+  width: 40%;
 }
 
 .body-txt {
@@ -52,19 +91,24 @@ button {
   flex-direction: column;
 }
 
-.body-header {
+.body-align {
   text-align: center;
+}
+
+.body-padding {
+  padding-bottom: 4rem;
 }
 
 .column-body {
   flex-basis: 50%;
 }
 
-.get-started {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+.body-width {
+  max-width: 900px;
+}
+
+.margin-left {
+  margin-left: 4rem;
 }
 
 .column-25 {
@@ -80,7 +124,6 @@ button {
   color: white;
   background-color: rgb(82 83 81);
   max-width: 900px;
-  margin: auto;
   height: 500px;
 }
 
@@ -89,6 +132,14 @@ button {
   height: auto;
   padding-left: 2rem;
   padding-top: 2rem;
+}
+
+.info-margin {
+  margin-bottom: 2rem;
+}
+
+.info-pad {
+  padding-top: 4rem;
 }
 
 .location-txt {
@@ -102,12 +153,4 @@ button {
 .body-background {
   background-color: #fafafa;
   color: 727272;
-}
-
-.hero-button {
-  position: absolute;
-  left: 16rem;
-  bottom: 8rem;
-  color: white;
-  width: 40%;
 }
