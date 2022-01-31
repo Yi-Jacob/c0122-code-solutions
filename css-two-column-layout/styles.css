@@ -36,10 +36,6 @@ button {
   display: flex;
 }
 
-.column {
-  width: 50%;
-}
-
 .textalignc {
   text-align: center;
 }
