@@ -117,14 +117,15 @@ button {
 
 .bottom-bar {
   justify-content: flex-start;
-  padding: 4rem;
+  padding: 1rem;
+  margin: 2rem;
 }
 
 .info-bar {
   color: white;
   background-color: rgb(82 83 81);
   width: 1000px;
-  height: 500px;
+  height: 400px;
 }
 
 .info-img {
@@ -146,11 +147,20 @@ button {
   padding-left: 2rem;
 }
 
-.gs-button {
-  margin: 4rem;
-}
-
 .body-background {
   background-color: #fafafa;
   color: 727272;
+}
+
+.gs-margin {
+  margin: 2rem;
+}
+
+.gs-margin-button {
+  margin-left: 8rem;
+  margin-top: 2rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
