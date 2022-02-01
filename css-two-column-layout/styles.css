@@ -4,8 +4,6 @@ img {
 }
 
 button {
-  margin-top: 50px;
-  margin-left: 425px;
   color: #d96a65;
   border-color: #d96a65;
   width: 150px;
@@ -63,7 +61,6 @@ button {
 
 .column1-3 {
   flex-basis: calc(100% / 3);
-  margin-right: 10%;
 }
 
 .bold {
@@ -80,4 +77,13 @@ button {
   margin-top: 44px;
   margin-bottom: 4px;
   padding-bottom: none;
+}
+
+.margin-right {
+  margin-right: 10%;
+}
+
+.button-pos {
+  text-align: center;
+  margin-top: 2rem;
 }
