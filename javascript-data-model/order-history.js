@@ -6,10 +6,9 @@ var orderHistory = [
     orderDate: 'August 4, 2020',
     deliveryDate: 'August 8, 2020',
     recipient: 'JS Masher',
-    itemDescription: [
-      {
-        item1: 'book, $31.55, Javascript for impatient programmers'
-      }],
+    itemDescription: ['book'],
+    itemName: ['Javascript for impatient programmers'],
+    subtotal: ['$31.55'],
     buyAgain: true,
     viewItem: true,
     productReview: true,
@@ -22,10 +21,9 @@ var orderHistory = [
     orderDate: 'July 19, 2020',
     deliveryDate: 'July 20, 2020',
     recipient: 'JS Masher',
-    itemDescription: [
-      {
-        item1: 'book, $41.33, The Timeless Way of Building'
-      }],
+    itemDescription: ['book'],
+    itemName: ['The Timeless Way of Building'],
+    subtotal: ['$41.33'],
     buyAgain: true,
     viewItem: true,
     productReview: true,
@@ -38,10 +36,9 @@ var orderHistory = [
     orderDate: 'July 4, 2020',
     deliveryDate: 'July 7, 2020',
     recipient: 'JS Masher',
-    itemDescription: [
-      {
-        item1: 'adapter, $15.98, Gamecube Controller Adapter'
-      }],
+    itemDescription: ['adapter'],
+    itemName: ['Gamecube Controller Adapter'],
+    subtotal: ['$15.98'],
     buyAgain: true,
     viewItem: true,
     productReview: true,
@@ -55,10 +52,13 @@ var orderHistory = [
     deliveryDate: 'July 5, 2020',
     recipient: 'JS Masher',
     itemDescription: [
-      {
-        item1: 'controller, $94.95, Gamecube Controller',
-        item2: 'book, $33.99, The Art of Sql'
-      }
+      'controller', 'book'
+    ],
+    itemName: [
+      'GameCube Controller', 'The Art of Sql'
+    ],
+    subtotal: [
+      '$94.95', '$33.99'
     ],
     buyAgain: true,
     viewItem: true,
