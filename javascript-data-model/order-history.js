@@ -6,9 +6,12 @@ var orderHistory = [
     orderDate: 'August 4, 2020',
     deliveryDate: 'August 8, 2020',
     recipient: 'JS Masher',
-    itemDescription: ['book'],
-    itemName: ['Javascript for impatient programmers'],
-    subtotal: ['$31.55'],
+    additionalInfo: [
+      {
+        itemDescription: 'book',
+        itemName: 'Javascript for impatient programmers',
+        subTotal: '$31.55'
+      }],
     buyAgain: true,
     viewItem: true,
     productReview: true,
@@ -21,9 +24,12 @@ var orderHistory = [
     orderDate: 'July 19, 2020',
     deliveryDate: 'July 20, 2020',
     recipient: 'JS Masher',
-    itemDescription: ['book'],
-    itemName: ['The Timeless Way of Building'],
-    subtotal: ['$41.33'],
+    additionalInfo: [
+      {
+        itemDescription: 'book',
+        itemName: 'The Timeless Way of Building',
+        subTotal: '$41.33'
+      }],
     buyAgain: true,
     viewItem: true,
     productReview: true,
@@ -36,9 +42,12 @@ var orderHistory = [
     orderDate: 'July 4, 2020',
     deliveryDate: 'July 7, 2020',
     recipient: 'JS Masher',
-    itemDescription: ['adapter'],
-    itemName: ['Gamecube Controller Adapter'],
-    subtotal: ['$15.98'],
+    additionalInfo: [
+      {
+        itemDescription: 'adapter',
+        itemName: 'GameCube Controller Adapter',
+        subTotal: '$15.98'
+      }],
     buyAgain: true,
     viewItem: true,
     productReview: true,
@@ -51,14 +60,16 @@ var orderHistory = [
     orderDate: 'July 3, 2020',
     deliveryDate: 'July 5, 2020',
     recipient: 'JS Masher',
-    itemDescription: [
-      'controller', 'book'
-    ],
-    itemName: [
-      'GameCube Controller', 'The Art of Sql'
-    ],
-    subtotal: [
-      '$94.95', '$33.99'
+    additionalInfo: [
+      {
+        itemDescription: 'controller',
+        itemName: 'GameCube Controller',
+        subTotal: '$94.95'
+      }, {
+        itemDescription: 'book',
+        itemName: 'The Art of Sql',
+        subTotal: '$33.99'
+      }
     ],
     buyAgain: true,
     viewItem: true,
