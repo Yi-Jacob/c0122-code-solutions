@@ -44,7 +44,7 @@ var css = {
 
 library.push(js);
 library.unshift(css);
-library.splice(1, 2, js);
+library.splice(1, 1);
 console.log(library);
 
 var fullName = 'Jacob Yi';
