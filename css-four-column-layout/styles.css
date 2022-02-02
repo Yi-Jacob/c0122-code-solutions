@@ -1,5 +1,19 @@
 body {
   font-family: Barlow, sans-serif;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+p {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.background-color {
   background-color: #f7f8fa;
 }
 
@@ -11,8 +25,7 @@ body {
 
 .small-img {
   width: 50px;
-  height: 80px;
-  margin: auto;
+  height: 60px;
 }
 
 .row {
@@ -34,10 +47,10 @@ body {
 }
 
 .header-text {
-  font-weight: 900;
-  font-size: 24px;
+  font-weight: 750;
+  font-size: 20px;
 }
 
 .bold-text {
-  font-weight: bold;
+  font-weight: 700;
 }
