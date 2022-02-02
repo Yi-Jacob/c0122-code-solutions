@@ -38,6 +38,7 @@ button {
 .nav-item {
   padding-left: 1rem;
   padding-right: 1rem;
+  color: #7d7d7d;
 }
 
 .nav-button {
@@ -57,28 +58,14 @@ button {
 
 .hero {
   width: 1000px;
-  height: 600px;
-  justify-content: space-evenly;
-}
-
-.hero-img {
-  position: relative;
-  max-width: 1000px;
   height: 500px;
-  margin-left: 4rem;
-}
-
-.hero-overlay {
-  position: relative;
-  width: 900px;
-  margin: auto;
-  background: linear-gradient(transparent, rgb(0 0 0 / 150%));
+  justify-content: space-evenly;
 }
 
 .hero-text {
   position: absolute;
   color: white;
-  width: 25%;
+  width: 35%;
   padding-left: 5rem;
   padding-top: 2rem;
   margin: auto;
@@ -95,6 +82,8 @@ button {
 .hero-button-sizing {
   width: 175px;
   height: 50px;
+  border-radius: 5%;
+  font-size: 16px;
 }
 
 .body-txt {
@@ -110,13 +99,14 @@ button {
 .body-align {
   align-items: center;
   text-align: center;
+  color: #7d7d7d;
 }
 
 .body-padding {
   padding-bottom: 4rem;
 }
 
-.column-body {
+.column-50 {
   flex-basis: 50%;
 }
 
@@ -134,8 +124,9 @@ button {
 
 .bottom-bar {
   justify-content: flex-start;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 6px;
+  margin: 8px;
+  margin-top: 1rem;
 }
 
 .info-bar {
@@ -148,11 +139,11 @@ button {
 .info-img {
   width: 150px;
   height: auto;
-  padding-left: 2rem;
   padding-top: 2rem;
 }
 
 .info-margin {
+  margin-left: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -161,7 +152,8 @@ button {
 }
 
 .location-txt {
-  padding-left: 2rem;
+  padding-left: 4rem;
+  margin: 4px;
 }
 
 .body-background {
@@ -199,7 +191,15 @@ button {
 
 .background-image {
   background-image: url("images/hero.jpg");
-  background-color: transparent;
-  background-size: 960px 600px;
+  background-size: 960px 500px;
   background-repeat: no-repeat;
+  filter: brightness(0.8) contrast(0.8);
+}
+
+.line-spacing {
+  line-height: 1.5rem;
+}
+
+.font-sizing {
+  font-size: 30px;
 }
