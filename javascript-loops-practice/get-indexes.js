@@ -1,8 +1,16 @@
-/* exported getIndexes */
+/* exported getIndexes
+function
+make the array to store indexes
+take in the array
+look at all values in the array
+assign indexes to all values of the array
+add the indexes to new array
+
+ */
 function getIndexes(array) {
-  array = [];
-  for (var key in array) {
-    array.push(getIndexes([key]));
+  var arr = [];
+  for (var i = 0; i < array.length; i++) {
+    arr.push(i);
   }
-  return array;
+  return arr;
 }
