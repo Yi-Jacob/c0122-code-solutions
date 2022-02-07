@@ -10,8 +10,9 @@ return the array
 
 function reverse(array) {
   var newArray = [];
-  while (array.length) {
-    newArray.push(array.pop());
+  for (var i = array.length - 1; i > -1; i--) {
+    newArray.push(array[i]);
   }
+
   return newArray;
 }
