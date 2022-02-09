@@ -7,6 +7,5 @@ if the string is a property, return the value assigned
 if not return undefinded
 */
 function getValue(object, key) {
-  // eslint-disable-next-line dot-notation
   return object[key];
 }
