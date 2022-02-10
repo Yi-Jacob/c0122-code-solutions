@@ -1,0 +1,16 @@
+.open-modal {
+  color: white;
+  background-color: blue;
+  width: 180px;
+  height: 60px;
+  font-size: 26px;
+  border-radius: 5%;
+}
+
+.no-button {
+  color: white;
+  background-color: red;
+  border-radius: 5%;
+  width: 80px;
+  height: 40px;
+}
