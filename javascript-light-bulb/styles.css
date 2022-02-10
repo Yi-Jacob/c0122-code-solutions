@@ -1,0 +1,45 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.align {
+  align-items: center;
+  justify-content: center;
+}
+
+.on {
+  border-radius: 50%;
+  background-color: #faea84;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: 12rem;
+  width: 250px;
+  height: 250px;
+  box-shadow: 5px, yellow;
+}
+
+.off {
+  border-radius: 50%;
+  background-color: #252525;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: 12rem;
+  width: 250px;
+  height: 250px;
+  box-shadow: 5px, whitesmoke;
+}
+
+.screenoff {
+  background-color: black;
+}
+
+.screenon {
+  background-color: white;
+}
