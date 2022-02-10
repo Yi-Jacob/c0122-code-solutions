@@ -10,6 +10,6 @@ function takeRight(array, count) {
   if (count > array.length) {
     return array;
   } else {
-    return array.slice(count + 1, array.length - 1);
+    return array.slice(-count);
   }
 }
