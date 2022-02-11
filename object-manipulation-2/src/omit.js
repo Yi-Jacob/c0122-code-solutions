@@ -7,8 +7,11 @@ if the key is NOT in the object return the key and value
 if the key is in the object do not return it
 */
 function omit(source, keys) {
-  delete source.keys;
-  var newObj = { source };
-  return newObj;
-
+  var newObject = {};
+  for (var key in source) {
+    if (keys.indexOf(key) === -1) {
+      newObject[key] = source[key];
+    }
+  }
+  return newObject;
 }

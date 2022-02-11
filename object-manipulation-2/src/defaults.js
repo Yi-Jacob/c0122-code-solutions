@@ -5,13 +5,22 @@ check the target object if the property of the source object is inside
 if the property is not inside, add the property and value to the target
 if the property is inside then do not add it
 the target object will have new objects based off the source object
+*/
 
 function defaults(target, source) {
-  for (var key in source) {
-    //if (source.hasOwnProperty(key) && target.hasOwnProperty(key)) {
-      target[key] = source[key];
+  var targetKey = [];
+  var sourceKey = [];
+
+  for (var key1 in target) {
+    targetKey.push(key1);
+  }
+  for (var key2 in source) {
+    sourceKey.push(key2);
+  }
+  for (var i = 0; i < sourceKey.length; i++) {
+    if (targetKey.indexOf(sourceKey[i]) === -1) {
+      target[sourceKey[i]] = source[sourceKey[i]];
     }
   }
-  //return target;
+
 }
-*/
