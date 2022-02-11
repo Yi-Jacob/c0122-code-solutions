@@ -1,5 +1,5 @@
 .container {
-  max-width: 1000px;
+  width: 1000px;
   margin: auto;
 }
 
@@ -8,38 +8,27 @@
 }
 
 .align {
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.on {
-  border-radius: 50%;
-  background-color: #faea84;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin-top: 12rem;
-  width: 250px;
-  height: 250px;
-  box-shadow: 5px, yellow;
-}
-
-.off {
-  border-radius: 50%;
-  background-color: #252525;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin-top: 12rem;
-  width: 250px;
-  height: 250px;
-  box-shadow: 5px, whitesmoke;
-}
-
-.screenoff {
+body {
   background-color: black;
 }
 
-.screenon {
-  background-color: white;
+.switch {
+  height: 250px;
+  width: 250px;
+  background-color: rgb(37 37 37);
+  border-radius: 50%;
+  border: none;
+}
+
+.circle.light-bulb-on {
+  background-color: rgb(250 233 132);
+  box-shadow: 0 0 40px rgb(250 233 132);
+}
+
+body.light-on {
+  background-color: rgb(254 249 241);
 }

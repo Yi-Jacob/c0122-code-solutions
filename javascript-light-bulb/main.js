@@ -1,10 +1,16 @@
-var $witch = document.querySelector('.switch');
-$witch.addEventListener('click', onOff);
+var $bodyColor = document.querySelector('body');
 
-function onOff(event) {
-  if ($witch.className === '.switch on') {
-    $witch.className = '.switch off';
+var $switch = true;
+function lightBulb(event) {
+  if ($switch) {
+    $circle.className = 'circle light-bulb-on';
+    $bodyColor.className = 'light-on';
   } else {
-    $witch.className = '.switch on';
+    $circle.className = 'circle';
+    $bodyColor.className = '';
   }
+  $switch = !$switch;
 }
+
+var $circle = document.querySelector('.circle');
+$circle.addEventListener('click', lightBulb);
