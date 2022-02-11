@@ -1,16 +1,20 @@
-var $bodyColor = document.querySelector('body');
+var $button = document.querySelector('button');
+var $body = document.querySelector('body');
+var $click = document.querySelector('.click');
 
-var $switch = true;
-function lightBulb(event) {
-  if ($switch) {
-    $circle.className = 'circle light-bulb-on';
-    $bodyColor.className = 'light-on';
-  } else {
-    $circle.className = 'circle';
-    $bodyColor.className = '';
+$click.addEventListener('click', $switch);
+
+var check = true;
+
+function $switch(event) {
+  var change = '';
+  if (check === true) {
+    change = 'light';
+    check = false;
+  } else if (check === false) {
+    change = 'dark';
+    check = true;
   }
-  $switch = !$switch;
+  $button.className = 'click ' + change;
+  $body.className = change;
 }
-
-var $circle = document.querySelector('.circle');
-$circle.addEventListener('click', lightBulb);

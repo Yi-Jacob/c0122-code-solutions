@@ -1,34 +1,31 @@
-.container {
-  width: 1000px;
-  margin: auto;
+body.light {
+  background-color: rgb(254 249 241);
+}
+
+body.dark {
+  background-color: rgb(17 17 17);
 }
 
 .row {
   display: flex;
-}
-
-.align {
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 
-body {
-  background-color: black;
+.light {
+  background-color: rgb(250 234 132);
+  border: solid 2px rgb(250 234 132);
+  box-shadow: 0 0 8px 1px rgb(250 234 132);
 }
 
-.switch {
-  height: 250px;
-  width: 250px;
+.dark {
   background-color: rgb(37 37 37);
+  border: solid 2px rgb(37 37 37);
+}
+
+button {
+  height: 12rem;
+  width: 12rem;
   border-radius: 50%;
-  border: none;
-}
-
-.circle.light-bulb-on {
-  background-color: rgb(250 233 132);
-  box-shadow: 0 0 40px rgb(250 233 132);
-}
-
-body.light-on {
-  background-color: rgb(254 249 241);
+  margin: 11rem auto;
 }
