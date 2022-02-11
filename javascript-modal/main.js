@@ -1,18 +1,15 @@
-var $open = document.querySelector('.open-modal');
-$open.addEventListener('click', popup);
+var $openModal = document.querySelector('.modal-button');
+$openModal.addEventListener('click', handleModalOpen);
 
-var $no = document.querySelector('.no-button');
-$no.addEventListener('click', windowOnClick);
+var $closeModal = document.querySelector('.close-modal');
+$closeModal.addEventListener('click', handleModalClose);
 
-var $modal = document.querySelector('.modal');
-$modal.addEventListener('click', windowOnClick);
+var $onOff = document.querySelector('.onOff');
 
-function popup(event) {
-  event.target.className('yes-modal');
+function handleModalOpen(event) {
+  $onOff.className = 'modal onOff';
 }
 
-function windowOnClick(event) {
-  if (event.target === $modal) {
-    popup();
-  }
+function handleModalClose(event) {
+  $onOff.className = 'modal onOff no-display';
 }

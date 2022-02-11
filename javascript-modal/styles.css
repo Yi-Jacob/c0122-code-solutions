@@ -1,39 +1,68 @@
-.open-modal {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  max-width: 1200px;
+}
+
+.row {
+  display: flex;
+}
+
+.alignment {
+  flex-direction: column;
+  margin: auto;
+}
+
+.modal-button {
+  background-color: rgb(74 74 233);
+  padding: 0.5rem 2rem;
   color: white;
-  background-color: blue;
-  width: 180px;
-  height: 60px;
-  font-size: 26px;
-  border-radius: 5%;
+  border: none;
+  border-radius: 0.3rem;
+  margin: 1rem;
+  font-family: sans-serif;
+  font-size: 1rem;
 }
 
 .no-button {
+  background-color: rgb(235 93 93);
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  border: none;
   color: white;
-  background-color: red;
-  border-radius: 5%;
-  width: 80px;
-  height: 40px;
+  margin: auto;
+  padding: 0.5rem 2.5rem;
+}
+
+.text {
+  font-family: sans-serif;
+  letter-spacing: -0.02rem;
+  font-weight: 600;
 }
 
 .modal {
+  position: fixed;
+  width: 420px;
+  height: 200px;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  border: none;
+  border-radius: 0.3rem;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 0 1000px rgb(0 0 0 / 80%);
+}
+
+.no-display {
   display: none;
 }
 
-.modal-content {
-  background-color: #fefefe;
+.margin-auto {
   margin: auto;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 15px;
-  width: 40%;
-  text-align: center;
-  border-radius: 5px;
-  border: none;
-}
-
-.yes-modal {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
