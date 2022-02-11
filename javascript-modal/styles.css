@@ -14,3 +14,26 @@
   width: 80px;
   height: 40px;
 }
+
+.modal {
+  display: none;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 15px;
+  width: 40%;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+}
+
+.yes-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
