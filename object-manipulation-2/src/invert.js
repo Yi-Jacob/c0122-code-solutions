@@ -2,6 +2,7 @@
 /*
 function with one parameter
 create new object to return
+checks for key in object
 adds the values to the new objects as properties
 adds the property names to the new object as property values
 returns the new object
