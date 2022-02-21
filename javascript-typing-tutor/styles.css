@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: auto;
+  max-width: 800px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex-basis: 100%;
+}
+
+.text {
+  text-align: center;
+}
+
+.margin-top {
+  margin-top: 12rem;
+}
+
+.underline {
+  border-bottom: solid 3px black;
+}
+
+.correct {
+  color: green;
+}
+
+.wrong {
+  color: red;
+}
