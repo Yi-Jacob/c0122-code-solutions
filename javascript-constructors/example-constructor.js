@@ -2,7 +2,7 @@ function ExampleConstructor() {
 
 }
 
-console.log('Prototype:', ExampleConstructor.prototype);
+console.log('Prototype:', ExampleConstructor.__proto__);
 console.log('Type of:', typeof ExampleConstructor);
 
 var newFunction = new ExampleConstructor();
