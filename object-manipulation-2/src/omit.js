@@ -3,8 +3,9 @@
 function with 2 parameters
 create new object to return
 checks for the key in the object
-if the key is NOT in the object return the key and value
-if the key is in the object do not return it
+if the key is NOT in the object assign it to the new object
+if the key is in the object do not return it or add it
+return the keys and values
 */
 function omit(source, keys) {
   var newObject = {};
