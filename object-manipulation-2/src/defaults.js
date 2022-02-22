@@ -4,7 +4,8 @@ function with 2 parameters
 create array to store values in
 checks for the key in the target
 checks for the key in the source
-check the target object if the property of the source object is inside
+puts all the keys in the arrays
+loop through the source keys for items that are not targets
 if the property is not inside, add the property and value to the target
 if the property is inside then do not add it
 the target object will have new objects based off the source object
