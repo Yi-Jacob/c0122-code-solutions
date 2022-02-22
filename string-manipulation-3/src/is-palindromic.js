@@ -9,10 +9,11 @@ return false if they are not
 */
 
 function isPalindromic(string) {
-  const j = string.length - 1;
+  var newString = string.replace(' ', '');
+  const j = newString.length - 1;
   for (var i = 0; i < j / 2; i++) {
-    const x = string[i];
-    const y = string[j - i];
+    const x = newString[i];
+    const y = newString[j - i];
     if (x !== y) {
       return false;
     }
