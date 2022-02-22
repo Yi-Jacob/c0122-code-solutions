@@ -2,30 +2,22 @@
 /*
 function with 2 arguments
 gets strings for both arguments
-each string has to have the same amount of characters to be an anagram
-gets each character of the first string
-gets each character of the second string
-checks the characters of the second string to see if they were contained in the first string
+gets rid of all the spaces and joins the characters.
+assigns the strings with no spaces to a new string
+gets each individual character of each string
+puts all the characters in alphabetical order
+puts all the characters into a new string
+assign the new string to a variable
+checks to see if the first string is the same as the second string
 return boolean based off result
 */
 
-// function isAnagram(firstString, secondString) {
-//   if (firstString.length !== secondString.length) {
-//     return false;
-//   }
-//   var first = firstString.split(' ').sort().join();
-//   var second = secondString.split(' ').sort().join();
-//   if (first === second) {
-//     return true;
-//   }
-// }
-
 function isAnagram(firstString, secondString) {
-  if (firstString.length !== secondString.length) {
-    return false;
-  }
-  var str1 = firstString.split('').sort().join('');
-  var str2 = secondString.split('').sort().join('');
+  var newString1 = firstString.replaceAll(' ', '');
+  var newString2 = secondString.replaceAll(' ', '');
+
+  var str1 = newString1.split('').sort().join();
+  var str2 = newString2.split('').sort().join();
   if (str1 === str2) {
     return true;
   } else {
