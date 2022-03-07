@@ -2,33 +2,28 @@
 /*
 funciton with one argument
 string as the argument
-array to store the new values
-gets each individual word in the string by splitting them by space
-loop through all the individual  words
-gets each individual character of each word
-revereses the characters of each individual word
-puts the words back together
-puts the newly reversed word in the array
-returns original string with the words in the same order but reveresed
+empty string to hold the words in
+another empty string to hold letters in
+loop through the string
+if theres a space then store the value and concatenate it to the result string
+make the temporary string empty
+if theres no space just add the last letter to the front in the temp storage
+assign the values in the temp storage to the result
+return the result
 */
 
 function reverseWords(string) {
-  var words = string.split(' ');
-  var array = [];
-  for (var i = 0; i < words.length; i++) {
-    var reversed = words[i].split('').reverse().join('');
-    array.push(reversed);
+  var result = '';
+  var tempString = '';
+  for (var i = 0; i < string.length; i++) {
+    if (string[i] === ' ') {
+      tempString += ' ';
+      result += tempString;
+      tempString = '';
+    } else {
+      tempString = string[i] + tempString;
+    }
   }
-  return array.join(' ');
+  result += tempString;
+  return result;
 }
-
-// function reverseWords(str) {
-//   // Go for it
-//   let reversed;
-//   const newArray = [];
-//   reversed = str.split(' ');
-//   for (var i = 0; i < reversed.length; i++) {
-//     newArray.push(reversed[i].split('').reverse().join(''));
-//   }
-//   return newArray.join(' ');
-// }
