@@ -36,4 +36,26 @@ function shuffleDeck() {
   }
 }
 shuffleDeck();
+
+var shuffled = _.shuffleDeck(deck);
+
+function dealCards(player) {
+  console.log(deck);
+  for (var i = 0; i < 2; i++) {
+    players.hand.push(shuffled[i]);
+    shuffled.splice(0, 1);
+  }
+}
+
+function dealToPlayers(playerList) {
+  for (var i = 0; i < players.length; i++) {
+    dealCards(players[i]);
+  }
+  return players;
+}
+
+function calculateHand(playerList) {
+  dealToPlayers(players);
+  var score = 0;
+}
 */
