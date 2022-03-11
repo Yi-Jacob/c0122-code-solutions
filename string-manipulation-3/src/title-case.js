@@ -18,7 +18,7 @@ function titleCase(title) {
   var specialCases = ['and', 'or', 'nor', 'but', 'a', 'as', 'at', 'by', 'for', 'in', 'of', 'on', 'per', 'to', 'the'];
   var words = lowerCased.split(' ');
   words[0] = words[0].charAt(0).toUpperCase() + words[0].substring(1);
-  if (words[0].charAt(0) === 'J') {
+  if (words[0] === 'Javascript:') {
     words[0] = 'JavaScript:';
     words[1] = 'The';
   }
