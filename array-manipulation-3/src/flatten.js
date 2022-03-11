@@ -4,7 +4,7 @@ function with one parameter
 new array to store values
 loop through the array to check if it is an array
 if it is an array loop through items in the array to see if they are arrays
-push the array items into the new aray
+push the array items and the array into the new aray
 if its not an array push it into the new array
 return the new array
 */
