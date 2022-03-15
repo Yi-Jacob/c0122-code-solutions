@@ -1,0 +1,191 @@
+    1  whoami
+    2  exit
+    3  whoami
+    4  git config --global --list
+    5  git config --global user.name "jacobyi11"
+    6  git config --global user.email "jakeyi00@gmail.com"
+    7  git config --global --list
+    8  exit
+    9  whoami
+   10  git config --global --list
+   11  exit
+   12  whoami
+   13  exit
+   14  http https://example.com
+   15  http --verbose https://example.com
+   16  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+   17  http --body GET https://example.com > http-messages/index.html
+   18  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+   19  git status
+   20  clear
+   21  git status
+   22  exit
+   23  whoami
+   24  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+   25  clear
+   26  whoami
+   27  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+   28  http https://example.com
+   29  http --verbose https://example.com
+   30  cd ~/repos/code-solutions
+   31  cd ~/repos/c0122-code-solutions
+   32  http https://learning-fuze.github.io/example/
+   33  http --verbose https://learning-fuze.github.io/example/
+   34  http --body GET https://jsonplaceholder.typicode.com/users > http-messages/users.json
+   35  http --body GET https://example.com > http-messages/index.html
+   36  git status
+   37  git add http-messages
+   38  git commit -m "completed http-messages Jacob Yi"
+   39  git push origin http-messages
+   40  git switch master
+   41  clear
+   42  git branch javascript-ajax
+   43  git switch javascript-ajax
+   44  git status
+   45  git add javascript-ajax
+   46  git commit -m "javascript-ajax exercise
+   47  "
+   48  git add javascript-ajax
+   49  git commit -m "completed javascript-ajax Jacob Yi"
+   50  git push origin javascript-ajax
+   51  git switch master
+   52  clear
+   53  git pull origin master
+   54  clear
+   55  git status
+   56  clear
+   57  git status
+   58  clear
+   59  dev-env
+   60  http https://api.openbrewerydb.org/breweries/search?query=dog
+   61  https://api.openbrewerydb.org/breweries?by_city=san_diego
+   62  http https://api.openbrewerydb.org/breweries?by_city=san_diego
+   63  dev-env
+   64  http  https://api.domainsdb.info/v1/domains/search?domain=facebook
+   65  http https://www.googleapis.com/books/v1/volumes?q=
+   66  http /api/location/(woeid)/
+   67  http /api/location/search/?query=(query)
+   68  dev-env
+   69  http https://www.metaweather.com/api/location/search/?query=san
+   70  http http://api.forismatic.com/api/1.0/
+   71  http https://inspiration.goprogram.ai/
+   72  http https://earthquake.usgs.gov/fdsnws/event/1/application.json
+   73  http http://openlibrary.org/subjects/love.json?published_in=1500-1600
+   74  http https://api.disneyapi.dev/characters
+   75  http https://api.untappd.com/v4/method_name?access_token=ACESSTOKENHERE
+   76  http --verbose https://pokeapi.co/api/v2/pokemon/ditto
+   77  http --verbose https://pokeapi.co/api/v2/generation/{id or name}/
+   78  http https://pokeapi.co/api/v2/generation/
+   79  http --verbose https://pokeapi.co/api/v2/pokemon/
+   80  http --verbose https://swapi.dev/api/
+   81  http https://swapi.dev/api/people/2/
+   82  http --verbose https://www.boredapi.com/api/activity
+   83  http --verbose https://api.zippopotam.us/us/92626
+   84  http https://api.funtranslations.com/translate/yoda.json
+   85  http --verbose https://api.themoviedb.org/3/movie/popular?api_key=ae82140c9c251d2fcd2c3ce9711b3299&language=en-US&page=1
+   86  http --verbose https://api.dictionaryapi.dev/api/v2/entries/en/hello
+   87  http --verbose https://api.themoviedb.org/3/movie/popular?api_key=ae82140c9c251d2fcd2c3ce9711b3299
+   88  http https://api.dictionaryapi.dev/api/v2/entries/en/hello
+   89  git statu
+   90  git status
+   91  git switch master
+   92  clear
+   93  dev-env
+   94  whoami
+   95  http https://openlibrary.org/works/OL45883W/Fantastic_Mr._FOX
+   96  http https://api.themoviedb.org/3/movie/popular?api_key=ae82140c9c251d2fcd2c3ce9711b3299&language=en-US&page=1
+   97  whoami
+   98  http --verbose https://api.openbrewerydb.org/breweries?by_city=san_diego
+   99  git status
+  100  git add .
+  101  git commit -m "completed"
+  102  git switch master
+  103  git pull origin master
+  104  clear
+  105  cd ~/repos/driving-game
+  106  git status
+  107  git pull origin master
+  108  clear
+  109  cd ~/repos/c0122-code-solutions
+  110  clear
+  111  git pull origin master
+  112  clear
+  113  dev-env
+  114  whoami
+  115  exit
+  116  q
+  117  exit
+  118  man ls
+  119  ls command-line-basics
+  120  -a command-line-basics
+  121  -F kill-me
+  122  ls -aF lfz-staff > lfz-staff/contents.txt
+  123  whoami
+  124  clear
+  125  man cat
+  126  cat three-virtues.txt
+  127  man cat
+  128  cat three-virtues.txt
+  129  man cat cat three-virtues.txt
+  130  cat three-virtues.txt
+  131  man ls
+  132  ls -A
+  133  ls -a
+  134  ls -F
+  135  cd ~/repos/c0122-code-solutions
+  136  cd command-line-basics
+  137  whoami
+  138  cat three-virtues.txt
+  139  ls
+  140  ls -a
+  141  ls -F
+  142  ls lfz-staff/
+  143  ls -aF lfz-staff > lfz-staff/contents.txt
+  144  cat lfz-staff/contents.txt
+  145  pwd
+  146  man pwd
+  147  pwd > i-was-here.txt
+  148  ls
+  149  cat i-was-here.txt
+  150  man echo
+  151  echo 'Hello, World!'
+  152  echo 'Hello, World!' > hello.txt
+  153  ls
+  154  cat echo hello.txt
+  155  cat hello.txt
+  156  man tough
+  157  man touch
+  158  touch tag-youre-it.txt
+  159  touch boop.txt > snoot/
+  160  man touch
+  161  touch boop.text/snoot/
+  162  touch ../boop.txt/snoot
+  163  touch ../snoot/boop.txtt
+  164  ls snoot/
+  165  man touch
+  166  mkdir
+  167  man mkdir
+  168  mkdir parent
+  169  ls parent/
+  170  mkdir -p parent/child/grandchild
+  171  touch parent/child/grandchild/.gitkeep
+  172  touch snoot/boop.txt
+  173  ls -a
+  174  ls -a .gitkeep
+  175  man mv
+  176  mv pokiemans pokemon
+  177  ls
+  178  man rm
+  179  rm lol.txt
+  180  ls lol.txt
+  181  rm -r kill-me/
+  182  ls kill-me/
+  183  man cp
+  184  man cp and-then.txt no-and-then.txt
+  185  cp and-then.txt no-and-then.txt
+  186  ls 
+  187  cat no-and-then.txt 
+  188  cat and-then.txt 
+  189  man history
+  190  history
+  191  history > command-history.txt
