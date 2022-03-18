@@ -3,7 +3,7 @@ function getRangeReport(start, end) {
   var range = [];
   for (var i = start; i <= end; i++) {
     range.push(i);
-    total = total + i;
+    total += i;
   }
   var odds = [];
   var evens = [];
