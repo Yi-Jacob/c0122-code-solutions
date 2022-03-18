@@ -1,10 +1,9 @@
 {
   "nextId": 8,
   "notes": {
-    "1": "hello",
-    "2": "world",
-    "5": "next",
-    "6": "test",
-    "7": "LFZ"
+    "1": "foo",
+    "2": "bar",
+    "4": "hello",
+    "6": "world"
   }
 }
