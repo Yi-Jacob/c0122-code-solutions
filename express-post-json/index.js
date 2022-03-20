@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const expressJson = express.json();
 
 let nextId = 1;
 const grades = {};
@@ -12,7 +13,7 @@ app.get('/api/grades', (req, res) => {
   res.json(gradesArray);
 });
 
-app.use(express.json());
+app.use(expressJson);
 
 app.post('/api/grades', (req, res) => {
   const data = req.body;
@@ -32,5 +33,5 @@ app.post('/api/grades', (req, res) => {
 
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
-  console.log('listening on port 3000!');
+  console.log('Listening on port 3000!');
 });
