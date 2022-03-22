@@ -104,7 +104,7 @@ app.put('/api/notes/:id', (req, res) => {
 
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
-  console.log('Listening on Port 3000');
+  console.log('Listening on Port 3000!');
 });
 
 app.use(expressJson);
