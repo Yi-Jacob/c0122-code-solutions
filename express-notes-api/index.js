@@ -57,7 +57,48 @@ app.post('/api/notes', (req, res) => {
 
 // Clients can DELETE a note by id.
 app.delete('/api/notes/:id', (req, res) => {
+  const deleteId = req.params;
+  const id = deleteId.id;
+  if (id < 0) {
+    res.status(400).json({ Error: 'Please use a positive integer' });
+  } else if (notes[id] === undefined) {
+    res.status(404).json({ Error: `Cannot find the ID:${id}` });
+  } else {
+    notes[id] = deleteId;
+    delete notes[id];
+    const updatedNotes = JSON.stringify(updatedFile, null, 2);
+    fs.writeFile('data.json', updatedNotes, err => {
+      if (err) {
+        console.error(err);
+        res.status(500).json({ error: 'An unexpected error occured.' });
+      } else {
+        res.sendStatus(204);
+      }
+    });
+  }
+});
 
+app.put('/api/notes/:id', (req, res) => {
+  const updateId = req.params;
+  const id = updateId.id;
+  const updatedContent = req.body;
+  if (id < 0 || updatedContent.content === undefined) {
+    res.status(400).json({ Error: 'Please use a positive integer and have your updated content in the header' });
+  } else if (notes[id] === undefined) {
+    res.status(404).json({ Error: `Cannot find the ID:${id}` });
+  } else {
+    updatedContent.id = id;
+    notes[id] = updatedContent;
+    const updatedNotes = JSON.stringify(updatedFile, null, 2);
+    fs.writeFile('data.json', updatedNotes, err => {
+      if (err) {
+        console.error(err);
+        res.status(500).json({ error: 'An unexpected error occured.' });
+      } else {
+        res.status(204).json(updatedContent);
+      }
+    });
+  }
 });
 
 app.listen(3000, () => {
