@@ -1,0 +1,21 @@
+{
+  "nextId": 6,
+  "notes": {
+    "1": {
+      "content": "Sunday",
+      "id": "1"
+    },
+    "2": {
+      "id": 2,
+      "content": "Tuesday"
+    },
+    "3": {
+      "id": 3,
+      "content": "Wednesday"
+    },
+    "5": {
+      "content": "Friday",
+      "id": 5
+    }
+  }
+}
