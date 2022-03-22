@@ -84,7 +84,7 @@ app.put('/api/notes/:id', (req, res) => {
   const id = updateId.id;
   const updatedContent = req.body;
   if (id < 0 || updatedContent.content === undefined) {
-    res.status(400).json({ Error: 'Please use a positive integer and have your updated content in the header' });
+    res.status(400).json({ Error: 'Please use a positive integer and include content in the header' });
   } else if (notes[id] === undefined) {
     res.status(404).json({ Error: `Cannot find the ID:${id}` });
   } else {
