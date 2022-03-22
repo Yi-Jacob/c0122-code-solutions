@@ -37,7 +37,7 @@ app.post('/api/notes', (req, res) => {
   const newContent = req.body;
   const id = nextId;
   if (newContent.content === undefined) {
-    res.status(400).json({ error: 'No content provided!' });
+    res.status(400).json({ error: 'Please provide some content' });
   } else {
     newNotes[id] = newContent;
     newContent.id = id;
@@ -47,7 +47,7 @@ app.post('/api/notes', (req, res) => {
     fs.writeFile('data.json', updatedNotes, err => {
       if (err) {
         console.error(err);
-        res.status(500).json({ error: 'An unexpected error occured.' });
+        res.status(500).json({ error: 'An unexpected error occured' });
       } else {
         res.status(201).json(newContent);
       }
@@ -78,6 +78,7 @@ app.delete('/api/notes/:id', (req, res) => {
   }
 });
 
+// Clients can replace a note (PUT) by id.
 app.put('/api/notes/:id', (req, res) => {
   const updateId = req.params;
   const id = updateId.id;

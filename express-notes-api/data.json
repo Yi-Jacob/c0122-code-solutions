@@ -1,45 +1,21 @@
 {
-  "nextId": 20,
+  "nextId": 6,
   "notes": {
+    "1": {
+      "content": "Sunday",
+      "id": "1"
+    },
     "2": {
       "id": 2,
-      "content": "The event loop, this, closures, and prototypal inheritance are special about JavaScript."
+      "content": "Tuesday"
     },
-    "6": {
-      "id": 6,
-      "content": "A closure is formed when a function retains access to variables in its lexical scope."
+    "3": {
+      "id": 3,
+      "content": "Wednesday"
     },
-    "9": {
-      "id": 9,
-      "content": "Inertia is a property of matter."
-    },
-    "10": {
-      "content": "tests",
-      "id": 10
-    },
-    "11": {
-      "content": "hello",
-      "id": 11
-    },
-    "12": {
-      "content": "hello world",
-      "id": 12
-    },
-    "13": {
-      "content": "please work",
-      "id": 13
-    },
-    "14": {
-      "content": "LFZ",
-      "id": 14
-    },
-    "16": {
-      "content": "test",
-      "id": "16"
-    },
-    "17": {
-      "content": "number",
-      "id": "17"
+    "5": {
+      "content": "Friday",
+      "id": 5
     }
   }
 }
