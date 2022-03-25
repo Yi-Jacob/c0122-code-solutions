@@ -73,12 +73,12 @@ app.put('/api/grades/:gradeId', (req, res) => {
   const course = req.body.course;
   const score = parseInt(req.body.score);
   const sql = `
-    UPDATE "grades"
-    SET "name" = $1,
+    update "grades"
+    set "name" = $1,
         "course" = $2,
         "score" = $3
-    WHERE "gradeId" = ${gradeId}
-    RETURNING *
+    where "gradeId" = ${gradeId}
+    returning *
     `;
   const values = [name, course, score];
 
@@ -94,7 +94,7 @@ app.put('/api/grades/:gradeId', (req, res) => {
     .then(result => {
       const updatedGrade = result.rows[0];
       if (!updatedGrade) {
-        res.status(404).json({ error: `gradeId ${gradeId} does not exist in grades table!` });
+        res.status(404).json({ error: `GradeId ${gradeId} does not exist in grades table!` });
       } else {
         res.status(200).json(updatedGrade);
       }
@@ -102,6 +102,34 @@ app.put('/api/grades/:gradeId', (req, res) => {
     .catch(err => {
       console.error(err);
       res.status(500).json({ error: 'An unexpected error occurred.' });
+    });
+});
+
+// Feature 4
+app.delete('/api/grades/:gradeId', (req, res) => {
+  const gradeId = Number(req.params.gradeId);
+  const sql = `
+  delete from "grades"
+  where "gradeId" = ${gradeId}
+  returning *
+  `;
+  if (!Number(gradeId)) {
+    res.status(400).json({ error: 'Invalid GradeId' });
+    return;
+  }
+
+  db.query(sql)
+    .then(result => {
+      const deletedGrade = result.rows[0];
+      if (!deletedGrade) {
+        res.status(404).json({ error: `GradeId ${gradeId} does not exist in grades table!` });
+      } else {
+        res.status(204).json(deletedGrade);
+      }
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(500).json({ error: 'An unexpected error occured.' });
     });
 });
 
