@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  flex-basis: 80%;
+}
+
+.column-10 {
+  flex-basis: 5%;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+img {
+  margin: 2rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+i {
+  margin: 0.5rem;
+}
+
+.margin-zero {
+  margin: 0;
+}

@@ -1,0 +1,48 @@
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-fifth {
+  flex-basis: 20%;
+}
+
+img {
+  width: 180px;
+  height: 280px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.header-text {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.info-text {
+  font-size: 12px;
+}
+
+.sizing-text {
+  color: #ddd;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.sale {
+  background-color: #f7ebe0;
+}
