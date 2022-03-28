@@ -2,7 +2,8 @@ var $list = document.querySelector('#user-list');
 // var city = 'huntington beach';
 
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'https://mempool.space/api/address/3Bs39s2zNpoTU6sbUTaKXdaU8PuPXm2koN');
+// xhr.open('GET', 'https://mempool.space/api/address/3Bs39s2zNpoTU6sbUTaKXdaU8PuPXm2koN');
+xhr.open('GET', 'https://blockchain.info/rawaddr/bc1qeqc2p6p2qlplzx7zaf0dfxzd76976pgda0unqh');
 xhr.responseType = 'json';
 xhr.addEventListener('load', function () {
   // console.log('XHR Status: ', xhr.status);
