@@ -3,15 +3,20 @@ import ReactDOM from 'react-dom';
 
 class CustomButton extends React.Component {
   constructor(props) {
+    // super function
     super(props);
-    this.state = { isClicked: false };
+    this.state = {
+      isClicked: false
+    };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
-    this.setState(prevState => ({
-      isClicked: !prevState.isClicked
-    }));
+    this.setState(prevState => (
+      {
+        isClicked: !prevState.isClicked
+      }
+    ));
   }
 
   render() {
