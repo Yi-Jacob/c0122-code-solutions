@@ -1,35 +1,34 @@
-.purple {
-  background-color: #351c75;
+button {
   color: white;
   padding: 10px;
+  border-radius: 4%;
 }
 
-.medium-purple {
-  background-color: #674ea7;
-  color: white;
-  padding: 10px;
+.normal {
+  background-color: black;
 }
 
-.coral {
-  background-color: #e06666;
-  color: white;
-  padding: 10px;
+.cold {
+  background-color: rgb(53 28 117);
 }
 
-.orange {
-  background-color: #f6b26b;
-  color: black;
-  padding: 10px;
+.cool {
+  background-color: rgb(103 78 167);
 }
 
-.yellow {
-  background-color: #fffa05;
-  color: black;
-  padding: 10px;
+.tepid {
+  background-color: rgb(224 102 102);
 }
 
-.white {
+.warm {
+  background-color: rgb(246 178 107);
+}
+
+.hot {
+  background-color: rgb(231 231 73);
+}
+
+.nuclear {
   background-color: white;
-  color: black;
-  padding: 10px;
+  color: red;
 }

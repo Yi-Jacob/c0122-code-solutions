@@ -4,7 +4,6 @@ class hotButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
       count: 0
     };
 
@@ -12,39 +11,28 @@ class hotButton extends React.Component {
 
   getColor(count) {
     if (count <= 2) {
-
-      return 'white';
-
+      return 'normal';
     } else if (count <= 5) {
-
-      return 'purple';
+      return 'cold';
     } else if (count <= 8) {
-
-      return 'medium-purple';
+      return 'cool';
     } else if (count <= 11) {
-
-      return 'coral';
+      return 'tepid';
     } else if (count <= 14) {
-
-      return 'orange';
+      return 'warm';
     } else if (count <= 17) {
-
-      return 'yellow';
+      return 'hot';
     } else {
-
-      return 'white';
+      return 'nuclear';
     }
-
   }
 
   render() {
     return (
-
       <button onClick={() => this.setState({ count: this.state.count + 1 })}
         className={(this.getColor(this.state.count))}>
         Hot Button
       </button>
-
     );
   }
 }
