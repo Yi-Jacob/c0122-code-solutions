@@ -1,4 +1,50 @@
-button {
-  padding: 1rem;
-  border-radius: 10%;
+#root {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-switch {
+  display: inline-block;
+  width: 75px;
+}
+
+.label {
+  display: block;
+  position: relative;
+  border: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  height: 24px;
+}
+
+.switch {
+  position: absolute;
+  background-color: white;
+  border: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  height: 25px;
+  width: 24px;
+}
+
+.label-on {
+  background-color: green;
+}
+
+.label-off {
+  background-color: white;
+}
+
+.toggle {
+  position: absolute;
+  background-color: white;
+  border: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  height: 20px;
+  width: 20px;
+}
+
+.toggle-on {
+  right: 0;
 }

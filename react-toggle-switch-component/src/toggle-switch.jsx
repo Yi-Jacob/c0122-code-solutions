@@ -1,36 +1,37 @@
 import React from 'react';
 
-class toggleSwitch extends React.Component {
+class ToggleSwitch extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      toggle: true
+      isClicked: false
     };
     this.handleClick = this.handleClick.bind(this);
+
   }
 
-  toggleView(count) {
-    if (count % 2 === 0) {
-      return 'on';
+  getSwitches() {
+    if (this.state.isClicked) {
+      return 'toggle toggle-on';
     } else {
-      return 'off';
+      return 'toggle';
     }
   }
 
+  handleClick() {
+    this.setState(prev => ({ isClicked: !prev.isClicked }));
+  }
+
   render() {
-    return (
-      <div>
-        <button onClick={() => this.setState({
-          count: this.state.count + 1
-        })}
-        className={this.toggleView(this.state.count)}
-        >
-          Toggle
-          </button>
-        <h1>ON</h1>
+    return <>
+      <div className="toggle-switch" onClick={this.handleClick}>
+        <label className={this.state.isClicked ? 'label label-on' : 'label label-off'}>
+          <div className={this.getSwitches()} />
+        </label>
       </div>
-    );
+      <span>{this.state.isClicked ? 'ON' : 'OFF'}</span>
+    </>;
   }
 }
 
-export default toggleSwitch;
+export default ToggleSwitch;

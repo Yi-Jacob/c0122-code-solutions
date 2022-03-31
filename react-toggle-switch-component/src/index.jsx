@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CustomButton from './toggle-switch';
+import ToggleSwitch from './toggle-switch';
 ReactDOM.render(
-  <CustomButton />,
+  <ToggleSwitch />,
   document.getElementById('root')
 );
