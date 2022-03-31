@@ -1,11 +1,16 @@
 #root {
   display: flex;
   align-items: center;
+  justify-content: start;
+}
+
+span {
+  margin-left: 1rem;
 }
 
 .toggle-switch {
   display: inline-block;
-  width: 75px;
+  width: 4rem;
 }
 
 .label {
@@ -23,7 +28,7 @@
   border: solid;
   border-radius: 20px;
   border-width: 2px;
-  height: 25px;
+  height: 22px;
   width: 24px;
 }
 

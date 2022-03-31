@@ -4,14 +4,13 @@ class ToggleSwitch extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isClicked: false
+      status: false
     };
     this.handleClick = this.handleClick.bind(this);
-
   }
 
-  getSwitches() {
-    if (this.state.isClicked) {
+  toggle() {
+    if (this.state.status) {
       return 'toggle toggle-on';
     } else {
       return 'toggle';
@@ -19,17 +18,17 @@ class ToggleSwitch extends React.Component {
   }
 
   handleClick() {
-    this.setState(prev => ({ isClicked: !prev.isClicked }));
+    this.setState(prev => ({ status: !prev.status }));
   }
 
   render() {
     return <>
       <div className="toggle-switch" onClick={this.handleClick}>
-        <label className={this.state.isClicked ? 'label label-on' : 'label label-off'}>
-          <div className={this.getSwitches()} />
+        <label className={this.state.status ? 'label label-on' : 'label label-off'}>
+          <div className={this.toggle()} />
         </label>
       </div>
-      <span>{this.state.isClicked ? 'ON' : 'OFF'}</span>
+      <span>{this.state.status ? 'ON' : 'OFF'}</span>
     </>;
   }
 }
