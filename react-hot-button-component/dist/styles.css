@@ -1,0 +1,34 @@
+button {
+  color: white;
+  padding: 10px;
+  border-radius: 4%;
+}
+
+.normal {
+  background-color: black;
+}
+
+.cold {
+  background-color: rgb(53 28 117);
+}
+
+.cool {
+  background-color: rgb(103 78 167);
+}
+
+.tepid {
+  background-color: rgb(224 102 102);
+}
+
+.warm {
+  background-color: rgb(246 178 107);
+}
+
+.hot {
+  background-color: rgb(231 231 73);
+}
+
+.nuclear {
+  background-color: white;
+  color: red;
+}
