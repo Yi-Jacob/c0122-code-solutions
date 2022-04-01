@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  padding: 5rem;
+  border-color: black;
+  border: solid;
+  margin: 2rem;
+}
+
+i {
+  color: black;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: white;
+  margin-left: 6rem;
+}
