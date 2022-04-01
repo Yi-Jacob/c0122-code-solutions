@@ -38,8 +38,11 @@ class stopwatch extends React.Component {
   }
 
   resetTimer() {
-    this.setState({ seconds: 0 });
-    clearInterval(this.tick);
+    const { isRunning } = this.state;
+    if (!isRunning) {
+      this.setState({ seconds: 0 });
+      clearInterval(this.tick);
+    }
   }
 
   render() {
