@@ -3,12 +3,14 @@ import React from 'react';
 class stopwatch extends React.Component {
   constructor(props) {
     super(props);
-    this.state = ({ isRunning: false, seconds: 0 });
-
+    this.state = ({
+      isRunning: false,
+      seconds: 0
+    });
     this.handleClick = this.handleClick.bind(this);
     this.startTimer = this.startTimer.bind(this);
     this.handlePause = this.handlePause.bind(this);
-    this.reset = this.reset.bind(this);
+    this.resetTimer = this.resetTimer.bind(this);
   }
 
   handleClick() {
@@ -20,7 +22,6 @@ class stopwatch extends React.Component {
 
   startTimer() {
     const { isRunning } = this.state;
-
     if (!isRunning) {
       this.tick = setInterval(() => {
         this.setState({ seconds: this.state.seconds + 1 });
@@ -36,7 +37,7 @@ class stopwatch extends React.Component {
     }
   }
 
-  reset() {
+  resetTimer() {
     this.setState({ seconds: 0 });
     clearInterval(this.tick);
   }
@@ -53,7 +54,7 @@ class stopwatch extends React.Component {
 
     return (
       <>
-        <div onClick={this.reset} className='circle'>
+        <div onClick={this.resetTimer} className='circle'>
           <span className='time'>{seconds}</span>
         </div>
         <div>
