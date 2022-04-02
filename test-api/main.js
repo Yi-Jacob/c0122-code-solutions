@@ -1,34 +1,98 @@
+/*
 var $list = document.querySelector('#user-list');
 // var city = 'huntington beach';
 
-var xhr = new XMLHttpRequest();
-// xhr.open('GET', 'https://mempool.space/api/address/3Bs39s2zNpoTU6sbUTaKXdaU8PuPXm2koN');
-xhr.open('GET', 'https://blockchain.info/rawaddr/bc1qeqc2p6p2qlplzx7zaf0dfxzd76976pgda0unqh');
-xhr.responseType = 'json';
-xhr.addEventListener('load', function () {
-  // console.log('XHR Status: ', xhr.status);
-  // console.log('XHR Response: ', xhr.response);
+var $searchForm = document.getElementById('search-form');
+var $submitButton = document.querySelector('.submit-button');
+var $searchInput = document.getElementById('input');
 
-  var $listItem = document.createElement('li');
-  $listItem.textContent = `Search Address ${xhr.response.address}`;
-  $list.appendChild($listItem);
+// $submitButton.addEventListener('click', xyz);
+$submitButton.addEventListener('click', abc);
 
-  var $sublist = document.createElement('ul');
-  $listItem.appendChild($sublist);
+// function xyz(e) {
+//   e.preventDefault();
+//   var inputValue = $searchInput.value;
+//   // console.log(inputValue);
+//   $searchForm.reset();
+//   var xhr = new XMLHttpRequest();
+//   xhr.open('GET', 'https://mempool.space/api/address/' + inputValue);
+//   xhr.responseType = 'json';
+//   xhr.addEventListener('load', () => {
+//     console.log('XHR Status: ', xhr.status);
+//     console.log('XHR Response: ', xhr.response);
 
-  var $addy = document.createElement('li');
-  var funds = xhr.response.chain_stats.funded_txo_sum / 1000000000;
-  $addy.textContent = `Total amount of Bitcoin: ${funds}`;
-  $sublist.appendChild($addy);
+//     var $listItem = document.createElement('li');
+//     $listItem.textContent = `Search Address ${xhr.response.address}`;
+//     $list.appendChild($listItem);
 
-  var $type = document.createElement('li');
-  $type.textContent = 'Transaction Total ' + xhr.response.chain_stats.tx_count;
-  $sublist.appendChild($type);
+//     var $sublist = document.createElement('ul');
+//     $listItem.appendChild($sublist);
 
-  // var $websiteUrl = document.createElement('li');
-  // $websiteUrl.textContent = '';
-  // $sublist.appendChild($websiteUrl);
+//     var funded = xhr.response.chain_stats.funded_txo_sum / 100000000;
+//     var spent = xhr.response.chain_stats.spent_txo_sum / 100000000;
+//     let fund$;
+
+//     var $addy = document.createElement('li');
+//     if (funded === spent) {
+//       fund$ = funded;
+//       // $addy.textContent = `Total amount of Bitcoin: ${funds}`;
+//     } else {
+//       fund$ = funded - spent;
+//       // $addy.textContent = `Total amount of Bitcoin: ${funds}`;
+//     }
+//     $addy.textContent = `Total amount of Bitcoin: ${fund$}`;
+//     $sublist.appendChild($addy);
+
+//     var $type = document.createElement('li');
+//     $type.textContent = 'Transaction Total ' + xhr.response.chain_stats.tx_count;
+//     $sublist.appendChild($type);
+
+//   });
+//   xhr.send();
+// }
+
+function abc(e) {
+  e.preventDefault();
+  var inputValue = $searchInput.value;
+  console.log(inputValue);
+  $searchForm.reset();
+  var xhr = new XMLHttpRequest();
+  // xhr.open('GET', 'https://mempool.space/api/address/' + inputValue);
+  xhr.open('GET', 'https://mempool.space/api/address/' + inputValue + '/txs');
+  xhr.responseType = 'json';
+  xhr.addEventListener('load', () => {
+    console.log('XHR Status: ', xhr.status);
+    console.log('XHR Response: ', xhr.response);
+    for (let i = 0; i < 5; i++) {
+
+      var $listItem = document.createElement('li');
+      $listItem.textContent = `Transaction ID: ${xhr.response[i].txid}`;
+      $list.appendChild($listItem);
+
+    }
+
+    // var $sublist = document.createElement('ul');
+    // $listItem.appendChild($sublist);
+
+    // var funded = xhr.response.chain_stats.funded_txo_sum / 100000000;
+    // var spent = xhr.response.chain_stats.spent_txo_sum / 100000000;
+    // let fund$;
+
+    // var $addy = document.createElement('li');
+    // if (funded === spent) {
+    //   fund$ = funded;
+    // } else {
+    //   fund$ = funded - spent;
+
+    // }
+    // $addy.textContent = `Total amount of Bitcoin: ${fund$}`;
+    // $sublist.appendChild($addy);
+
+    // var $type = document.createElement('li');
+    // $type.textContent = 'Transaction Total ' + xhr.response.chain_stats.tx_count;
+    // $sublist.appendChild($type);
+
+  });
+  xhr.send();
 }
-
-);
-xhr.send();
+*/
