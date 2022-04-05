@@ -149,12 +149,12 @@ function xyz(e) {
   xhr.send();
 }
 */
-// fetch('https://jsonplaceholder.typicode.com/users')
+// fetch('https://mempool.space/api/address/1wiz18xYmhRX6xStj2b9t1rwWX4GKUgpv/txs')
 //   .then(res => res.json())
 //   .then(users => console.log(users))
 //   .catch(err => console.log('Fetch failed!', err));
 
-// fetch('https://pokeapi.co/api/v2/pokemon/1')
+// fetch('https://mempool.space/api/address/1wiz18xYmhRX6xStj2b9t1rwWX4GKUgpv')
 //   .then(res => res.json())
 //   .then(data => console.log(data))
 //   .catch(err => console.log('Fetch failed!', err));
