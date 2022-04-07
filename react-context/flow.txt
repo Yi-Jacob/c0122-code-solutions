@@ -1,0 +1,60 @@
+-User can sign up.
+
+If the user wants to sign up they'll press the 'sign up' on the navbar or 'register now'
+-that is located towards the bottom of the log in container.
+In doing so the hash will change to '#sign-up'
+A post request gets sent to '/api/auth/sign-up'
+The server in index.js receieves the request then checks that the user submitted a a valid username/password,
+-if not an error is thrown
+If the is valid, argon2 will hash the password.
+It will then send a sql query to the database inserting the new client info to the sql table
+The username and new hashed password are then assigned to a new const variable params,
+-that is then called by the query method of the db object along with the sql query,
+-and the return of the method call is then returned from the then method.
+A new then method is being called where the user element of the result.rows is being destructured.
+After the destructuring the server sends a 201 response to the client to indicate the request succeed
+-a long with the user element that was destructued as a JSON string.
+The hash then changes route to 'sign in'
+
+-User can sign in
+
+The default context type is set to sign in so when the user attempts to sign in the
+-handlesubmit method will get called and send a post request to '/api/auth/sign-in'
+The server in index.js receieves the request.
+The username and password are destructured from the request body.
+If the username or password is falsey/invalid the server throws an error at the client
+Else the inputs are valid and the server will run a sql query to the database
+- to get the matching username and hashed password
+The username element is assigned to a const variable params which is called as an argumet for
+- the query method of the db object.
+The db.query is ran and the user element is destructued from the result responese.
+If the user is falsey/invalid the server throws an error at the client
+Else, the userId, hashedPassword properties are destructured from the user
+Then Argon2 will verify that the hashedPassword and the password are the same
+If they are not the same the server throws an error at the client
+Else, a payload that includes the userId and username along with a new token
+- are created for the user, sent to the user as a json string
+The handsignin method would then get called which
+-will destructure the user and token from the result
+-save the token to local storage
+-and set the state of the user property to the signed in user
+
+User can stay signed in (even if they refresh the page).
+
+When the user signs in their token is saved into localstorage
+So when the user refreshes the page, componentDidMount will be called to update the hash route to the current hash location by setting the state
+The method call will then get the token from local storage and assign it to a variable
+If the return of the getItem is truthy the decodeToken function will be called with the token as the argument
+-else the user will be set to null.
+The setstate method is called to update the user property and to set isAuthorizing to false
+The render method will method will be called after the compondentdidmount mehtod updates the state
+The app will be re rendered
+React will then update the react DOM.
+
+User can sign out.
+
+There is an eventlistener that listens for when the user clicks the signout button which will call the handlesignout method
+The handlesignout method will then remove the token saved in localstorage
+The handlesignout method will also set the state of the user to null
+The render method will then be called after the state is updated to re render the app
+Render will update the dom.
