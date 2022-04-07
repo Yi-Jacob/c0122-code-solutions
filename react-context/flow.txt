@@ -50,3 +50,11 @@ The setstate method is called to update the user property and to set isAuthorizi
 The render method will method will be called after the compondentdidmount mehtod updates the state
 The app will be re rendered
 React will then update the react DOM.
+
+User can sign out.
+
+There is an eventlistener that listens for when the user clicks the signout button which will call the handlesignout method
+The handlesignout method will then remove the token saved in localstorage
+The handlesignout method will also set the state of the user to null
+The render method will then be called after the state is updated to re render the app
+Render will update the dom.
