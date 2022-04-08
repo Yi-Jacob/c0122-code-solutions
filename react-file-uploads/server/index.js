@@ -23,19 +23,21 @@ app.post('/api/uploads', uploadsMiddleware, (req, res, next) => {
   if (!caption) {
     throw new ClientError(400, 'caption is a required field');
   }
-  const imageUrl = `/images/${req.file.filename}`;
+  const url = `/images/${req.file.filename}`;
   const sql = `
   insert into "images" ("caption", "url")
   values ($1, $2)
   returning *
-    `;
-  const params = [caption, imageUrl];
+  `;
+  const params = [caption, url];
   db.query(sql, params)
     .then(result => {
-      const [image] = result.rows;
-      res.status(200).json(image);
+      const [file] = result.rows;
+      console.log(result);
+      res.status(201).json(file);
     })
     .catch(err => next(err));
+
   /**
    * - create a url for the image by combining '/images' with req.file.filename
    * - insert the "caption" and "url" into the "images" table
