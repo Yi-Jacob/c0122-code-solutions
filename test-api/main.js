@@ -176,3 +176,13 @@ function xyz(e) {
   ]).then(([res1, res2]) => ([res1.json(), res2.json()]));
   // .then(([data1, data2]) => console.log(data1, data2));
 }
+
+/*
+function limiter(n) {
+  if (n === 6) {
+    return 3;
+  } else {
+    return 3 * limiter(n + 1);
+  }
+}
+*/
