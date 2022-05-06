@@ -24,8 +24,7 @@
 //   });
 
 Promise.all([
-  fetch('https://jsonplaceholder.typicode.com/users').then(resp => resp.json().then(console.log)),
+  fetch('https://jsonplaceholder.typicode.com/users').then(resp => resp.json()).then(console.log('test')),
   fetch('https://pokeapi.co/api/v2/pokemon/1').then(resp => resp.json()),
   fetch('https://jsonplaceholder.typicode.com/todos/3').then(resp => resp.json())
-]);
-// .then(console.log);
+]).then(console.log);
