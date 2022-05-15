@@ -1,3 +1,15 @@
+
+// fetch('https://jsonplaceholder.typicode.com/users')
+//   .then(res => res.json())
+//   .then(data => console.log(data))
+//   .catch(err => console.log('Fetch failed!', err));
+
+// fetch('https://pokeapi.co/api/v2/pokemon/1')
+//   .then(res => res.json())
+//   .then(data => console.log(data))
+//   .catch(err => console.log('Fetch failed!', err));
+
+
 import mempoolJS from '@mempool/mempool.js';
 
 const init = async () => {
@@ -12,6 +24,7 @@ const init = async () => {
 
 };
 init();
+
 
 // fetch('https://blockchain.info/rawaddr/bc1q8ea6w5tvs458u7r6u5n88ggzhkk0hmedpgnu9z')
 //   .then(res => res.json())

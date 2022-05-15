@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 <body>
+  <script type="module" src="https://mempool.space/mempool.js"></script>
   <script src="main.js"></script>
+
   <script type="text/javascript" src="https://mempool.space/mempool.js"></script>
+
 </body>
-</html>
+</html>  -->
+<!-- <!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="https://mempool.space/mempool.js"></script>
+    <script>
+    const init = async () => {
+
+      const { bitcoin: { addresses } } = mempoolJS({
+        hostname: 'mempool.space'
+      });
+
+      const address = '1wiz18xYmhRX6xStj2b9t1rwWX4GKUgpv';
+      const myAddress = await addresses.getAddress({ address });
+
+      document.getElementById('result').textContent = JSON.stringify(myAddress, undefined, 2);
+
+    };
+    init();
+    </script>
+  </head>
+
+<body>
+  <pre id="result"></pre>
+</body>
+
+</html> -->
