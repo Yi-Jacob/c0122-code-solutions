@@ -149,12 +149,40 @@ function xyz(e) {
   xhr.send();
 }
 */
-// fetch('https://jsonplaceholder.typicode.com/users')
+// fetch('https://mempool.space/api/address/1wiz18xYmhRX6xStj2b9t1rwWX4GKUgpv/txs')
 //   .then(res => res.json())
 //   .then(users => console.log(users))
 //   .catch(err => console.log('Fetch failed!', err));
 
-// fetch('https://pokeapi.co/api/v2/pokemon/1')
+// fetch('https://mempool.space/api/address/1wiz18xYmhRX6xStj2b9t1rwWX4GKUgpv')
 //   .then(res => res.json())
 //   .then(data => console.log(data))
 //   .catch(err => console.log('Fetch failed!', err));
+
+// var $list = document.querySelector('#user-list');
+var $searchForm = document.getElementById('search-form');
+var $submitButton = document.querySelector('.submit-button');
+var $searchInput = document.getElementById('input');
+
+$submitButton.addEventListener('click', xyz);
+
+function xyz(e) {
+  e.preventDefault();
+  var inputValue = $searchInput.value;
+  $searchForm.reset();
+  Promise.all([
+    fetch(`https://mempool.space/api/address/${inputValue}`),
+    fetch(`https://mempool.space/api/address/${inputValue}/txs`)
+  ]).then(([res1, res2]) => ([res1.json(), res2.json()]));
+  // .then(([data1, data2]) => console.log(data1, data2));
+}
+
+/*
+function limiter(n) {
+  if (n === 6) {
+    return 3;
+  } else {
+    return 3 * limiter(n + 1);
+  }
+}
+*/
