@@ -160,22 +160,8 @@ function xyz(e) {
 //   .catch(err => console.log('Fetch failed!', err));
 
 // var $list = document.querySelector('#user-list');
-var $searchForm = document.getElementById('search-form');
-var $submitButton = document.querySelector('.submit-button');
-var $searchInput = document.getElementById('input');
 
-$submitButton.addEventListener('click', xyz);
-
-function xyz(e) {
-  e.preventDefault();
-  var inputValue = $searchInput.value;
-  $searchForm.reset();
-  Promise.all([
-    fetch(`https://mempool.space/api/address/${inputValue}`),
-    fetch(`https://mempool.space/api/address/${inputValue}/txs`)
-  ]).then(([res1, res2]) => ([res1.json(), res2.json()]));
-  // .then(([data1, data2]) => console.log(data1, data2));
-}
+// .then(([data1, data2]) => console.log(data1, data2));
 
 /*
 function limiter(n) {
@@ -186,3 +172,20 @@ function limiter(n) {
   }
 }
 */
+function getPrice() {
+  var price = 'https://api.coincap.io/v2/assets/bitcoin';
+
+  fetch(price)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      // console.log(data.data);
+      // console.log(data.data.marketCapUsd);
+      // console.log(data.data.supply);
+      // console.log(data.data.volumeUsd24Hr);
+      // console.log(data.data.changePercent24Hr);
+    });
+}
+
+getPrice();
